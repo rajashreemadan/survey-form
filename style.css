@@ -1,0 +1,124 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+}
+body {
+  background: #FF7043;
+  font-family: 'Roboto', sans-serif;
+   /* fallback for old browsers */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1 {
+  font-size: 2em;
+  text-align: center;
+  color: #fff;
+  margin: 1em auto 0;
+}
+.form-card {
+  width: 80%;
+  max-width: 500px;
+  margin: 2em auto 3em;
+  padding: 5em 2em;
+  background: #fff;
+  border-radius: 10px;
+}
+#description {
+  text-align: center;
+  margin-bottom: 2em;
+}
+#survey-form {
+  display: flex;
+	flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+}
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+label {
+  display: block;
+  font-size: .9em;
+  width: 100%;
+  margin: 0 0 5px;
+  letter-spacing: .03em;
+}
+label.main {
+  margin: 3em 0 .5em;
+}
+sup {
+  font-size: .75em;
+}
+input,
+select,
+textarea {
+  box-sizing: border-box;
+  background: #FBE9E7;
+  display: block;
+  font-size: .9em;
+  width: 100%;
+  margin: 0 auto;
+  padding: .75em;
+  letter-spacing: .03em;
+  border-radius: 3px;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  display: inline;
+  width: 2em;
+  margin: 0 auto;
+  margin: 0 4px 8px 0;
+  height: auto;
+}
+select {
+  padding: 6px;
+  height: 3em;
+}
+#submit {
+  background: #FF7043;
+  color: #fff;
+  letter-spacing: .1em;
+  font-weight: bold;
+  width: 200px;
+  padding: 1em;
+  margin-top: 3em;
+  -webkit-transition: background .5s;
+  -moz-transition: background .5s;
+  -ms-transition: background .5s;
+  -o-transition: background .5s;
+  transition: background .5s;
+}
+#submit:hover, #submit:active, #submit:focus {
+  background: #ff6331;
+  cursor: pointer;
+}
+@media only screen and (min-width: 971px) {
+  .form-card {
+    max-width: 700px;
+    padding: 5em;
+  }
+  #survey-form {
+    max-width: 900px;
+  }
+  .container {
+    align-items: stretch;
+	}
+}
